@@ -20,6 +20,9 @@ nav{
     position: sticky;
     top: 0;
     background: white;
+    opacity: 0.95;
+    z-index: +2;
+
 }
 #logo{
     width: 50vw;
@@ -147,6 +150,37 @@ button:hover{
     font-size: 5vh;
 }
 
+#Products{
+    margin: 5vh;
+    background: rgb(240, 240, 240);
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#Products div{
+    height: 95%;
+    color: black;
+    width: 50%;
+    padding: 5vh;
+    font-family:'Roboto', sans-serif;;
+    font-size: 4vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+} 
+#Iris{
+    border-right: 1.5px solid black;
+}
+#Iris img{
+    height: 45vh;
+}
+#Retina img{
+    height:48vh ;
+}
+
 #net{
     margin: 5vh;
     background: rgb(240, 240, 240);
@@ -250,4 +284,139 @@ button:hover{
 }
 #about h2{
     font-size: 4vh;
+}
+
+
+@media screen and (max-width: 1800px){
+    nav{
+        display:none;
+        
+    }
+
+    #header{
+        height: 60vh;
+        font-size: 4.5vh;
+    }
+    #header>h2{
+        font-size: 3.5vh;
+    }
+
+    #sec-1{
+        font-size: 3vh;
+        display: flex;
+        flex-direction: column;
+        margin: 3%;
+        width: 94%;
+        justify-content: space-evenly;
+        height: 80vh;   
+    }
+    #sec-1 img{
+        height: 32vh;
+    }
+
+    #sec-2{
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 3vh;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 3%;
+        width: 94%;
+        height: 80vh;
+        padding: 0;
+    }
+    #t2{
+        font-size: 3vh;
+        width: 80%;
+        text-align: center;
+    }
+    #sec-2 img{
+        height: 35vh;
+    }
+    #Products{
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+        margin: 3%;
+        width: 93%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #Products div{
+        font-size: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 100%;
+    }
+    #Products button{
+        width: 60%;
+    }
+    #Iris{
+        border: none;
+        font-size: 3vh;
+    }
+    #Products img{
+        height: 30vh;
+    }
+
+    #net{
+        font-size: 3vh;
+        display: flex;
+        flex-direction: column;
+        margin: 3%;
+        width: 94%;
+        justify-content: space-evenly;
+        height: 80vh;
+    }
+    #net-t{
+        font-size: 3vh;
+    }
+    #net img{
+        height: 30vh;
+    }
+
+    #club{
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 3vh;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 3%;
+        width: 94%;
+        height: 80vh;
+        padding: 0;
+    }
+    #club-text{
+        font-size: 3vh;
+    }
+    #club img{
+        height: 30vh;
+    }
+
+    #special{
+        height: 80vh;
+        width: 94%;
+        margin: 3%;
+        font-size: 3vh;
+        overflow: hidden;
+        padding: 3%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about{
+        flex-direction: row;
+        overflow: hidden;
+        font-size: 2vh;
+        padding: 3%;
+    }
+    #about h2{
+        font-size: 2vh;
+    }
+    #about li a{
+        font-size: 2vh;
+    }
 }
